@@ -1,0 +1,222 @@
+.page-footer{
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	.footer-top{
+		position: relative;
+		background-color:#008cc9;
+		padding: 30px 0;
+		.card-row{
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap:wrap;
+			@media (max-width: 1024px){
+			padding-left: 15px;
+			padding-right: 15px;
+			display: block;
+			.card-column{
+				    padding-bottom: 30px;
+			}
+			}
+			.input-group{
+				display: flex;
+				.form-control{
+					height: 50px;
+					box-shadow: none;
+					border-color:#ccc;
+					position: relative;
+					z-index: 2;
+					float: left;
+					width: 100%;
+					margin-bottom: 0;
+					padding: 6px 12px;
+					font-size: 14px;
+					line-height: 1.42857143;
+					color:#555;
+					background-color:#fff;
+					background-image: none;
+					border: 1px solid #ccc;
+					transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+				}
+			.input-group-addon{
+				.btn{
+					height: 50px;
+					cursor: pointer;
+					font-weight: normal;
+					line-height: unset;
+					display: flex;
+					align-items: center;
+				}
+			}
+			}
+			.btn{
+				position: relative;
+				padding: 12px 20px ;
+				height: auto;
+				text-transform: uppercase;
+				font-size: 20px;
+				font-size: 1.25rem;
+				font-weight: 700;
+				@media (max-width: 1024px){
+					font-size: 1rem;
+				}
+				@media(max-width: 767px){
+					padding:12px 5px;
+				}
+			}
+		}
+
+	}
+	.footer-mid{
+		position: relative;
+		background-color:#1e2c35;
+		color:#fff;
+		padding: 15px 0;
+		.card-row{
+			display: flex;
+			flex-wrap: wrap;
+			margin-right: -15px;
+			margin-left: -15px;
+			@media (max-width: 1024px){
+				display: block;
+				padding-right: 15px;
+				padding-left: 15px;
+			}
+			.card-column{
+				flex-basis: 25%;
+				max-width: 25%;
+				flex-grow: 1;
+				padding-right: 15px;
+				padding-left: 15px;
+				padding-bottom: 15px;
+				padding-top: 15px;
+				@media(max-width: 1024px){
+					max-width: 100%;
+				}
+			}
+		}
+		h2{
+			font-size: 1.125rem;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin: 0 0 20px;
+			line-height: 1.3em;
+		}
+		ul{
+			li{
+				list-style: none;
+				a{
+					color:#fff;
+					display: block;
+					position: relative;
+					text-decoration: none;
+					margin-bottom: 10px;
+					font-size: 14px;
+				}
+			}
+		}
+		address{
+			.address-list{
+              li{
+              	position: relative;
+				list-style-type: none;
+				line-height: 1.3em;
+				margin-bottom: 3px;
+				padding-left: 30px;
+              }
+              .icon-map{
+			    background: url(img/gps.svg);
+
+              }
+              .icon{
+			    height: 15px;
+			    width: 15px;
+			    background-size: cover;
+			    background-position: center;
+			    position: absolute;
+			    left: 5px;
+              }
+              .icon-phone{
+              	background: url(img/phone.svg);
+              }
+              .icon-mail{
+              	background: url(img/mail.svg);
+              }
+			}
+		}
+
+		.payment{
+			.hr-list{
+				li{
+					display: flex;
+					flex-wrap: wrap;
+					margin-right: -5px;
+					margin-left: -5px;
+					a{
+						margin: 5px;
+					}
+				}
+			}
+		}
+		.social_footer{
+			ul{
+				display: flex;
+			}
+			li{
+				position: relative;
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+			.icon{
+          	    height: 30px;
+			    width: 30px;
+			    background-size: cover;
+			    background-position: center;
+			    display: block;
+			}
+			.icon-facebook{
+                background: url(img/social/facebook.svg);
+			}
+			.icon-twitter{
+				background: url(img/social/twitter.svg);
+			}
+			.icon-instagram{
+				background: url(img/social/instagram.svg);
+			}
+			.icon-linkedin-square{
+				background: url(img/social/linkedin.svg);
+			}
+			.icon-youtube-square{
+			   background: url(img/social/youtube.svg);
+			}
+		}
+	}
+	.footer-bottom{
+		position: relative;
+		font-size: 14px;
+		font-size: .875rem;
+		background-color:#020304;
+		color:#fff;
+		padding: 10px 0;
+		@media (max-width: 1024px){
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.copyright{
+			font-size: .875rem;
+			color:rgba(255,255,255,.5);
+			text-align: left;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.btn-theme-2{
+    background-color:#ff9a04;
+    color:#fff;
+    &:hover{
+    	background-color:#ea8c00;
+		color:#fff;
+    }
+}
+}

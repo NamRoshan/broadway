@@ -1,0 +1,40 @@
+.navbar-design .navbar .navbar-brand img {
+    height: 42px;
+    padding-right: 12px;
+}
+/*brand*/
+.navbar-design .navbar-dark .navbar-brand:hover, .navbar-design .navbar-dark .navbar-brand:active, .navbar-dark .navbar-brand:focus {
+    color: #fe7c00;
+}
+.navbar-dark .navbar-brand span {
+    color: #0d88f9;
+}
+.navbar-dark .navbar-brand {
+    color: #fe7c00;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .2em ;
+}
+/*end brand*/
+/*.navbar-design .bg-dark {
+        background-color: white !important;
+}*/
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+    color:rgba(0,0,0,.84);
+  /*  font-weight: bold;*/
+}
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #fe7c00;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(0,0,0,.54);
+    line-height: 20px;
+    letter-spacing: .05em ;
+}
+
+/*toogle*/
+.navbar-dark .navbar-toggler {
+  background: #6e6e6eb3;
+  }
+/*end toogel*/

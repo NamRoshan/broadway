@@ -1,0 +1,49 @@
+.flexslider{
+	margin:0;
+	border: solid white 10px;
+/*	margin-bottom: 5px;*/
+}
+.cstm-container{
+	overflow: hidden;
+}
+.flexslider .slides img {
+	cursor: pointer;
+	}
+ .flex-direction-nav .flex-prev {
+    opacity: 0.7;
+    left: 10px;
+}
+.flex-direction-nav .flex-next {
+	opacity: 0.7;
+	right: 10px;
+}
+#carousel .flex-active-slide{
+	opacity: .5;
+}
+
+.flex-direction-nav a::before {
+	color: white;
+	font-size: 21px;
+	}
+.flex-direction-nav a {	
+	width: 40px;
+	height: 40px;
+	line-height: 43px;
+	background: #1b1b1b;
+	opacity: .5;
+	padding-left: 12px;
+	padding-right: 23px;
+	border-radius: 2px;	
+}
+#carousel .flex-direction-nav a{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	background: #1b1b1b;
+	opacity: .5;
+	padding-left: 12px;
+	padding-right: 23px;
+	border: 2px solid #d8d8d8;
+	border-radius: 50%;
+
+}

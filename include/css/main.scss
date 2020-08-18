@@ -1,0 +1,409 @@
+// *****************header******************
+// cd /var/www/html/Design/broadway/include/css
+// node-sass -o custom custom -w
+// sass --watch main.scss:main.css
+// https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers
+
+// $desktop: 786px;
+// @mixin desktop {
+//     @media (max-width: #{$desktop}) {
+//         @content;
+//     }
+// }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+$lists: (
+  ".layout-container",
+  ".container",
+
+  );
+@each $list in $lists{
+    #{$list}{
+
+      box-sizing: border-box;
+     // padding-right: 15px;
+     //  padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+
+    @media (min-width: 576px) {
+
+        max-width: 540px;
+
+    }
+
+    @media (min-width: 768px) {
+        max-width: 720px;
+
+    }
+
+    @media (min-width: 992px) {
+
+        max-width: 960px;
+
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1140px;
+
+    }
+  }
+}
+// ****************Header file******************
+@import "header.scss";
+@import "font.scss";
+
+
+// ***********************main page*************
+.match-top-padding{
+      padding-top: 113px;
+      @media(max-width: 1024px){
+        padding-top: 0px;
+      }
+}
+section{
+  &.main-page{
+
+    .heading{
+      font-size: 32px;
+      line-height: 42px;
+      color:#2f506c;
+      font-family: lato;
+      margin-bottom: 46px;
+    }
+    p{
+      line-height: 28px;
+      text-align: justify;
+      padding-bottom: 15px;
+      font-size: 16px;
+      font-size: 1rem;
+    }
+    .card-row{
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+      @media(max-width: 1024px){
+        display: block;
+        margin: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+      .card-column{
+        flex-basis: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+    }
+    .svg-lerning-img{
+      background: url(img/page/online-training.svg) top right no-repeat;
+      background-size: 80%;
+      min-height: 370px;
+      @media(max-width: 1024px){
+        display: none;
+      }
+    }
+  }
+}
+@media(max-width: 1024px){
+  #mob_hidden{
+    display: none;
+  }
+}
+.slider{
+  @media(max-width: 1024px){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  #slider{
+    border: none;
+    ul{
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+  }
+  .slides{
+    li{
+      padding: 10px;
+      @media(max-width: 1024px){
+            margin-left: -7px;
+      }
+      &:nth-child(2n){
+        .courseItem{
+          .item-header{
+            background: radial-gradient(ellipse at center,#f38421 0,#e67e22 100%);
+          }
+        }
+      }
+    }
+  }
+  .flex-control-nav{
+    display:none;
+  }
+  .flex-direction-nav{
+    width: 100%;
+    position: absolute;
+    text-align: right;
+    top: -70px;
+    z-index: 10;
+    right: 0;
+    text-align: right;
+    @media  (max-width: 1024px){
+      top: -24px;
+      right: 29px;
+    }
+    a{
+      position: inherit;
+      display: block !important;
+      background:#ff9a04;
+      font-size: 34px;
+      opacity: 1;
+      line-height: 34px;
+      color: transparent;
+      @media (max-width: 1024px){
+            width: 35px;
+            height: 35px;
+            line-height: 26px;
+      }
+      &:before{
+        font-size: 17px;
+      }
+    }
+    .flex-prev{
+      left: -50px;
+    }
+    .flex-next{
+      right: -50px;
+    }
+    li{
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 13px;
+    }
+  }
+  h2{
+    br{
+      display: none;
+      @media(max-width: 1024px){
+        display: block;
+      }
+    }
+  }
+   .cmn-heading{
+    color: #2f506c;
+    position: relative;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 26px;
+    line-height: 1.3em;
+    margin-bottom: 0;
+   }
+    .courseItem {
+      box-shadow: 0 0 10px 5px rgba(0,0,0,.05);
+      border: 0;
+      border-bottom: 3px solid #ddd;
+      background: #fff;
+      padding: 0;
+      border-radius: 0 0 6px 6px;
+      text-align: center;
+      .item-header{
+        background: radial-gradient(ellipse at center,#00abdb 0,#008cc9 100%);
+        position: relative;
+        color:#fff;
+        background-size: cover;
+        height: 60px;
+      }
+      .item-content{
+            min-height: 245px;
+            .item-body{
+              padding: 35px 10px 10px;
+              li{
+                padding:0;
+                position: relative;
+                color:#8c8c8c;
+                list-style-type: none;
+                display: block;
+                padding: 3px 0 !important;
+                line-height: 1.3em;
+                font-size: 13px;
+            }
+             .contentList{
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                font-size: 12px;
+                padding: 7px;
+                li{
+
+                }
+              }
+              h3{
+                color: black;
+                min-height: 54px;
+                &:hover{
+                  color: #008cc9;
+                }
+              }
+
+            }
+      }
+      .btn{
+           color:#fff;
+          background-color:#428bca;
+          border-color:#357ebd;
+          display: block;
+          height: 100%;
+          cursor: pointer;
+      }
+  }
+}
+
+// *******************************about use ***********************
+.about-us{
+  @media (max-width: 767px){
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .card-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    .card-column{
+      flex-basis: 33%;
+      padding-right: 15px;
+      padding-left: 15px;
+      padding-bottom: 20px;
+      @media (max-width: 1024px){
+        flex-basis: 50%;
+      }
+      @media (max-width:767px){
+        flex-basis: 100%;
+      }
+
+      p{
+        margin-top: -30px;
+        padding-left: 50px;
+        width: 100%;
+      }
+      .icon-earth,.icon-online-courses,.icon-customize,.icon-job-placement,.icon-certified,.icon-opportunity,.icon-money,.icon-expert {
+          background: url('img/about/android.svg');
+
+      }
+      .icon{
+        height: 20px;
+        width: 20px;
+        background-size: cover;
+        background-position: center;
+        display: block;
+
+      }
+    }
+  }
+  h2{
+    font-size: 32px;
+    line-height: 42px;
+    color:#2f506c;
+    font-family: lato;
+    margin-bottom: 46px;
+  }
+}
+// ***********info**********
+.card-info{
+  .card-row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -25px;
+    margin-left: -25px;
+    @media(max-width: 1024px){
+      margin: 0;
+      display: block;
+    }
+    .card-column{
+      flex-basis: 45%;
+      margin: 25px;
+      hr{
+        border: 1px solid #fd9a27;
+        height: 2px;
+        margin: 40px 0;
+      }
+      img{
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+   h3{
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 15px;
+      color: #2f506c;
+   }
+}
+
+
+// *******another info********
+.training-points{
+    background: url(img/page/studying.svg) #ecf3fa left bottom no-repeat;
+    background-size: auto;
+    background-size: 100%;
+    margin-bottom: 70px;
+    @media (max-width: 1024px){
+      background-size: 269%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    ul{
+      margin: 0 0 0 25px;
+      li{
+        line-height: 22px;
+        padding: 10px 0;
+         position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          background:url(img/next.svg);
+          height: 15px;
+          width: 15px;
+          background-size: cover;
+          background-position: center;
+          left: -23px;
+          top: 13px;
+
+        }
+      }
+    }
+}
+// ***********footer file ************
+@import"footer.scss";
