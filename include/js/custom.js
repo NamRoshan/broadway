@@ -130,5 +130,42 @@ $('.go-back').click(function(event){
     // $('.moveon .dropdown-menu-child').addClass('check');
 });
 
+
+
+
+
+
+
+// #################################################For toogle jquery###############################
+    $('.card-training .course-objective').readmore({
+      speed: 500,
+        moreLink: '<a href="#" class="see_more">See More</a>',
+        lessLink: '<a href="#" class="see_less">See Less</a>',
+        collapsedHeight: 245,
+        heightMargin: 16,
+    });
 // #########################################end Navbar toogle#####################################
+
+
+$( "#accordion" ).accordion({
+ active:1, 
+ collapsible: true,
+ header: ".panel-heading",
+
+
+});
+$("#expand-all").click(function(){
+  $(".ui-accordion-content").show();
+  $('#collapse-all').addClass('show');
+  $('#collapse-all').removeClass('hide');
+  $(this).addClass('hide');
+  $('.panel-heading').removeClass('ui-accordion-header-collapsed');
+});
+$("#collapse-all").click(function(){
+  $(".ui-accordion-content").hide();
+  $('#expand-all').addClass('show');
+  $(this).addClass('hide');
+  $('#expand-all').removeClass('hide');
+  $('.panel-heading').addClass('ui-accordion-header-collapsed');
+});
 });

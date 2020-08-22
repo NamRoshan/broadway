@@ -1,4 +1,10 @@
-
+.sticky{
+	background-color:#008cc9;
+	box-shadow: 0 5px 8px
+	rgba(0,0,0,.3),0 5px 8px
+	rgba(0,0,0,.3);
+	transition: .6s;
+}
 header{
 	width: 100% !important;
 }
@@ -519,6 +525,10 @@ header{
 										position: relative;
 										-webkit-mask:url("img/button.svg") no-repeat center;
 										mask: url("img/button.svg") no-repeat center;
+										  -webkit-mask-size: cover;
+										mask-size: cover;
+										 mask-mode: alpha;
+ 										 -webkit-mask:alpha;
 										height: 14px;
 										width: 14px;
 										right: 5px;
@@ -600,6 +610,10 @@ header{
                         			background-color:white;
 									-webkit-mask: url('img/right-arrow.svg')no-repeat center;
 									mask: url('img/right-arrow.svg') no-repeat center;
+									  -webkit-mask-size: cover;
+ 									 mask-size: cover;
+ 									 mask-mode: alpha;
+ 									 -webkit-mask:alpha;
 									height: 14px;
 									width: 14px;
 									right: 5px;
